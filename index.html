@@ -1,46 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<title>Museu Nacional</title>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Museu Naional</title>
 
-	<!-- Normalize CSS -->
+	<!--Nomailze CSS-->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-	<!-- Estilo customizado -->
+	<!--Estilos Costumizados-->
+
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<link rel="stylesheet" type="text/css" href="css/Cabecalho/header.css">
+	<link rel="stylesheet" type="text/css" href="css/conteudoPrincipal.css/contúdoDaPagina.css">
+
 
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
 	<![endif]-->
 
-
 </head>
-<body>
 
-	<div id="container"><!-- Início container -->
-		
-		<header><!-- Início header -->
+<body>
+	<div id="container"> <!-- Início Container-->
+		<header id="cabecalho"> <!-- Início do header-->
 			<div id="logo">
-				<h1><a href="">Museu Nacional</a></h1>
+				<h1><a href="">Museu nacional</a></h1>
 			</div>
 
-			<nav><!-- Início nav -->
+			<nav> <!-- Início do Nav-->
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Exposições</a></li>
-			        <li><a href="#">Pesquisa</a></li>
-			        <li><a href="#">Acervo</a></li>
-			        <li><a href="#">vídeos</a></li>
-			        <li><a href="#">fotos</a></li>
-			        <li><a href="#">contato</a></li>
+					<li><a href="#">Home</a> </li>
+					<li><a href="#">Exposições</a> </li>
+					<li><a href="#">Pesquisa</a> </li>
+					<li><a href="#">Acervo</a> </li>
+					<li><a href="#">Vídeos</a> </li>
+					<li><a href="#">Fotos</a> </li>
+					<li><a href="#">Contatos</a> </li>
 				</ul>
-			</nav><!--/fim nav -->
+			</nav> <!-- Fim do Nav-->
 
-		</header><!--/fim header -->
+		</header> <!-- Fim do Header-->
 
+		<div id="principal">
+			<div id="conteudo">
+				<img src="img/museu.png">
+			<div/>
 
-	</div><!--/fim container -->
+			<aside>
+				<section id="depoimento">
+					<img src="img/depoimento.png" alt="">
+				</section>
+
+				<section id="visita">
+					<h4>Faça uma visita </h4>
+					<form action="">
+						<fieldset>
+							<legend>Selecione uma data </legend>
+							<label for="">Data</label>
+							<input type="text" id="data" value="dd/mm/aaaa">
+
+							<label for="">Qtd. de Pessoas</label>
+							<input type="text" id="qtd" value="1">
+
+						</fieldset>
+
+						<input type="submit" value="Verificar disponibilidade">
+
+					</form>
+				</section>
+
+			</aside>
+		</div>
+	</div> <!-- Fim Container-->
+
+	
+	
+
 
 </body>
 </html>
