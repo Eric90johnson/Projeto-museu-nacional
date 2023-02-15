@@ -1,0 +1,13 @@
+/*conteudo principal*/
+
+#conteudo{
+    width: 710px;
+    float: left;
+    background: green;
+}
+
+aside {
+    width: 350px;
+    float: right;
+    background: #ebe7dd;
+}
